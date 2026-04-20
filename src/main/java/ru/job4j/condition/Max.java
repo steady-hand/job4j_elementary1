@@ -6,8 +6,16 @@ public class Max {
         return result;
     }
 
+    public static int max(int first, int second, int third) {
+        return max(max(first, second), third);
+    }
+
+    public static int max(int first, int second, int third, int fourth) {
+        return max(max(first, second), max(third, fourth));
+    }
+
     public static void main(String[] args) {
-        int result = max(5, 6);
+        int result = max(5, 6, 5, 9);
         System.out.println(result);
     }
 }
